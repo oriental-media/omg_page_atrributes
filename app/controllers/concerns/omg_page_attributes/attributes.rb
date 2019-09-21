@@ -3,7 +3,7 @@ module OmgPageAttributes
 		extend ActiveSupport::Concern
 
 		included do
-	    before_filter :build_page_attributes
+	    before_action :build_page_attributes
 	  end
 
 	  def build_page_attributes
